@@ -111,26 +111,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-        // 터치 이벤트를 방지하여 확대/축소를 막는 방법
-        document.addEventListener('touchstart', function(event) {
-            if (event.touches.length > 1) {
-                event.preventDefault();
-            }
-        }, { passive: false });
+        // // 터치 이벤트를 방지하여 확대/축소를 막는 방법
+        // document.addEventListener('touchstart', function(event) {
+        //     if (event.touches.length > 1) {
+        //         event.preventDefault();
+        //     }
+        // }, { passive: false });
 
-        // 키보드 단축키를 사용한 확대/축소 방지
-        document.addEventListener('keydown', function(event) {
-            if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0')) {
-                event.preventDefault();
-            }
-        });
+        // // 키보드 단축키를 사용한 확대/축소 방지
+        // document.addEventListener('keydown', function(event) {
+        //     if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0')) {
+        //         event.preventDefault();
+        //     }
+        // });
 
-        // 마우스 휠을 사용한 확대/축소 방지
-        document.addEventListener('wheel', function(event) {
-            if (event.ctrlKey) {
-                event.preventDefault();
-            }
-        }, { passive: false });
+        // // 마우스 휠을 사용한 확대/축소 방지
+        // document.addEventListener('wheel', function(event) {
+        //     if (event.ctrlKey) {
+        //         event.preventDefault();
+        //     }
+        // }, { passive: false });
 
 
 
