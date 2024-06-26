@@ -1,0 +1,750 @@
+*{   /* 전체 */
+    margin: 0;
+    padding: 0;
+}
+
+ul li{  /* ul과 li에 style 없음 */
+    list-style: none;
+}
+
+/* 부모 태그에는 포지션 relative 자식에게는 absolute */
+
+nav{   /* 상단 nav 구성 */
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav > form{
+    position: relative;
+}
+
+.menu_search_top > input{  /* 상단 검색창 */
+    position: absolute;
+    left: 10;
+    width: 160px;
+    height: 28px;
+    border-radius: 20px;
+    border-width: 1px;
+    padding-left: 30px;
+    margin-top: 5px;
+}
+
+.menu_search_top > span{ /* 상단 검색창 돋보기 아이콘 */
+    position: absolute;
+    top: 8;
+    left: 15;
+}
+
+.menu_search_top_btn > input[type="submit"]{  /* 상단 검색창 버튼 */
+    position: absolute;
+    top: 5;
+    left: 125;
+    width: 60px;
+    height: 28px;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+
+.menu_search_top_btn > input[type="submit"]:hover{ /* 버튼에 커서를 갖다대면 */
+cursor: pointer;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+#top_nav {  /* 상단 nav */
+    position: absolute;
+    display: block;
+    left: 80px; /* 'px' 추가 */
+    width: 1340px;
+    height: 40px; /* 높이를 더 높게 변경 */
+    background-color: #ffffff; /* 배경색 추가 */
+    margin-left: 120px;
+    border-radius: 8px; /* 둥근 모서리 추가 */
+    padding: 10px; /* 패딩 추가 */
+}
+
+#top_nav > ul { 
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#top_nav > ul > li {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 1rem;
+}
+
+#top_nav > ul > li:not(:first-child):after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 20px; /* 높이 증가 */
+    background-color: #aaa;
+    content: '';
+    transform: translateY(-50%);
+}
+
+#top_nav > ul > li:hover {
+    cursor: pointer;
+}
+
+#top_nav > ul > li > a {
+    color: #333; /* 텍스트 색상 변경 */
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; /* 폰트 스타일 추가 */
+    font-weight: bold; /* 폰트 두께 변경 */
+    transition: color 0.3s ease; /* 텍스트 색상 변경에 트랜지션 추가 */
+}
+
+#top_nav > ul > li > a:hover {
+    color: #b6b6b6; /* 호버 시 텍스트 색상 변경 */
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+.login_nav {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    top: 10;
+    background-color: #ffffff; /* 배경색 추가 */
+    padding: 10px 20px; /* 패딩 추가 */
+    border-radius: 8px; /* 둥근 모서리 추가 */
+}
+
+.login_nav > ul {
+    position: relative;
+    right: 0;
+    width: 300px;
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    margin: 0;
+    padding: 0;
+    display: flex; /* 수평 정렬 */
+    align-items: center; /* 세로 정렬 */
+}
+
+.login_nav > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.login_nav > ul > li > a {
+    color: #333; /* 텍스트 색상 변경 */
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; /* 폰트 스타일 추가 */
+    font-weight: bold; /* 폰트 두께 변경 */
+    transition: color 0.3s ease; /* 텍스트 색상 변경에 트랜지션 추가 */
+}
+
+.login_nav > ul > li > a:hover {
+    color: #c5c5c5; /* 호버 시 텍스트 색상 변경 */
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.logo > a > img{  /* 상단 로고 */
+    position: absolute;
+    width: 160px;
+    height: 130px;
+    margin-top: 5px;
+}
+
+.header_search > input{ /* 상단 로고 옆 검색창 */
+    position: absolute;
+    top: 40;
+    left: 300;
+    width: 650px;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+
+.header_p{ /* 상단 p태그 */
+    position: absolute;
+    top: 50;
+    left: 170;
+}
+
+.header_search > button > span{ /* 검색창 돋보기 아이콘 */
+    position: absolute;
+    top: 48;
+    left: 910;
+}
+.header_search > button:hover{ /* 아이콘에 커서를 갖다대면 */
+    cursor: pointer;
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.main_nav { /* 메인 nav바 */
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    width: 1845px;
+    height: 50px;
+    background-color: #333; /* 배경색 추가 */
+    border-radius: 8px; /* 둥근 모서리 */
+}
+
+.main_nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_nav > ul > li {
+    display: inline-block;
+    padding: 0 40px;
+    position: relative;
+}
+
+.main_nav > ul > li > a {
+    color: white; /* 텍스트 색상 변경 */
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-family: Arial, sans-serif; /* 폰트 스타일 추가 */
+    font-weight: bold; /* 폰트 두께 변경 */
+    transition: color 0.3s ease; /* 색상 변경에 트랜지션 추가 */
+}
+
+.main_nav > ul > li:hover {
+    cursor: pointer;
+}
+
+.main_nav > ul > li > a:hover {
+    color: #45a5ff; /* 호버 시 텍스트 색상 변경 */
+}
+
+.main_nav ul ul {
+    width: 130px;
+    visibility: hidden; /* 처음에 보이지 않도록 설정 */
+    opacity: 0; /* 처음에 보이지 않도록 설정 */
+    position: absolute;
+    top: 100%;
+    left: 13px;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease; /* 트랜지션 속성 추가 */
+    border-radius: 4px; /* 둥근 모서리 */
+    overflow: hidden; /* 내용이 넘치지 않도록 설정 */
+}
+
+.main_nav ul ul li {
+    display: block;
+    padding: 10px 10px;
+}
+
+.main_nav ul ul li:hover {
+    background-color: #b1b1b1; /* 호버 시 배경색 변경 */
+}
+
+.main_nav ul li:hover > ul {
+    visibility: visible; /* 서브메뉴가 보이도록 설정 */
+    opacity: 1; /* 불투명도 변경 */
+    transform: translateY(0); /* 원래 위치로 이동 */
+}
+
+.main_nav ul ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main_nav ul ul li a:hover {
+    color: rgb(42, 70, 146);
+    text-decoration: none;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.inquiry{ /* 고객센터 */
+    position: absolute;
+    bottom: 20px;
+    right: 20;
+}
+
+.inquiry > ul > li > a span{
+    position: absolute;
+    right: 70;
+    top: 0;
+}
+
+
+.inquiry > ul > li > a{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.inquiry > ul > li > a:hover{
+    color: rgb(109, 172, 255);
+    transition: color 0.5s ease; /* 색상 변경에 트랜지션 추가 */
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+section{   /* 메인 */
+    position: relative;
+    display: flex;
+    left: 10;
+    width: 1850px;
+    height: auto;
+    /* background-color: #f4ffce; */
+}
+
+.leftmenu{
+    position: relative;
+    bottom: 7px;
+    display: block;
+    width: 200px;
+    height: auto;
+    background-color: #333; /* 배경색 추가 */
+    border-radius: 5px;
+
+}
+
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.leftmenu_nav { /* 왼쪽 nav */
+    width: 200px;
+    margin-top: 20px;
+}
+
+.leftmenu_nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leftmenu_nav li {
+    position: relative;
+}
+
+.leftmenu_nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #333; /* 배경색 추가 */
+    color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+    padding-left: 30px;
+}
+
+.leftmenu_nav a:hover {
+    background-color: #ddd;
+}
+
+.submenu {  /* 왼쪽 nav 서브 */
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.menu-item:focus-within .submenu,
+.menu-item:active .submenu {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+.submenu li a {
+    padding: 8px 10px;
+    background-color: #333; /* 배경색 추가 */
+    border-bottom: 1px solid #ccc;
+}
+
+.submenu li a:hover {
+    background-color: #d6d6d6;
+}
+
+@keyframes slideDown {  /* 서브 nav 효과 */
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-item span{
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    color: rgb(255, 255, 255);
+}
+.menu-item span:hover{
+    color: rgb(0, 102, 255);
+    transition: color 0.5s;
+}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.main_section{
+    position: relative;
+    width: 1650px;
+    height: auto;
+    /* background-color: rgb(216, 138, 138); */
+    
+}
+
+.se1{
+    width: 1650px;
+    height: auto;
+    background-color: #ffffff;
+    margin-bottom: 80px;
+}
+
+.se1_p1 p{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.se1 table {
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+
+.se1 table th {
+    width: 200px;
+    background-color: #6cbdff;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+.se1 table td {
+    width: 1300px;
+    padding: 10px;
+}
+
+
+.name {
+    width: 500px;
+    height: 35px;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.made_company {
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.phone {
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.model {
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.price {
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.stock {
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.explanation {
+    height: 400px;
+}
+
+
+.explanation_input {
+    width: 1100px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.category {
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+.picture {
+    text-align: center;
+}
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.file-input-container input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.file-input-button {
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid #cccccc;
+    color: white;
+    background-color: #7fdbff;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 200px;
+}
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.preview-container img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.btn {
+    height: 100px;
+    text-align: center;
+}
+
+.btn button {
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+    margin: 0 10px; 
+}
+
+.btn button:hover{
+    cursor: pointer;
+    background-color: #bfe2ff;
+    transition: background-color 0.5s ease;
+    opacity: 0.9;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+footer{  /* 하단 */
+    position: relative;
+    display: flex;
+    width: 1900;
+    height: 200px;
+    /* background-color: #45a5ff; */
+}
+
+.company{  /* 하단 회사 설명 */
+    width: 1400px;
+    height: 190px;
+    /* background-color: #aaa; */
+    margin-top: 10px;
+}
+
+.footer_logo img{  /* 로고*/
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    top: 20;
+    left: 10;
+}
+
+.footer_text{  /* 글자들 전체 */
+    position: relative;
+    top: 0;
+    left: 190;
+    width: 1200px;
+    height: 180px;
+    /* background-color: red; */
+}
+
+.footer_text1 p{ /* 주소 */
+    position: absolute;
+    top: 10;
+    color: #575757ab;
+}
+
+.footer_text2 p{  /* 이메일 */
+    position: absolute;
+    top: 10;
+    left: 400;
+    color: #575757ab;
+}
+.footer_text3 p{  /* 통신판매신고번호 */
+    position: absolute;
+    top: 45;
+    color: #575757ab;
+}
+.footer_text4 p{  /* 사업자등록번호 */
+    position: absolute;
+    top: 45;
+    left: 400;
+    color: #575757ab;
+}
+.footer_text5 p{  /* 대표자*/
+    position: absolute;
+    top: 80;
+    color: #575757ab;
+}
+
+.copy p{   /* copyright */
+   position: absolute;
+   bottom: 30;
+   color:#333333c2;
+}
+
+.footer_text1 p b{
+    color: #000000;
+}
+.footer_text2 p b{
+    color: #000000;
+}
+
+.footer_text3 p b{
+    color: #000000;
+}
+
+.footer_text4 p b{
+    color: #000000;
+}
+
+.footer_text5 p b{
+    color: #000000;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.security{
+    width: 500px;
+    height: 200px;
+    /* background-color: green; */
+}
+
+.se_logo{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    /* background-color: #8a8a8a; */
+}
+
+.se_img1 img{
+    position: absolute;
+    top: 20;
+    right: 65;
+    width: 100px;
+    height: 100px;
+}
+
+.se_p1 p{
+    position: absolute;
+    top: 130;
+    right: 50;
+}
+
+.se_p2 p{
+    position: absolute;
+    bottom: 30;
+    right: 80;
+}
+
+
+.se_img2 img{
+    position: absolute;
+    top: 20;
+    left: 80;
+    width: 100px;
+    height: 100px;
+}
+
+
+.se_p3 p{
+    position: absolute;
+    top: 130;
+    left: 67;
+}
+
+.se_p4 p{
+    position: absolute;
+    bottom: 30;
+    left: 95;
+}

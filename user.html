@@ -1,0 +1,291 @@
+<head>
+    <meta charset="UTF-8" content="text/html" http-equiv="content-type">
+    <link rel="icon" href="img/logo_img.png"> 
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title th:text="${title}">스마트 재고관리</title>
+    <!-- <script>
+        // 터치 이벤트를 방지하여 확대/축소를 막는 방법
+        document.addEventListener('touchstart', function(event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+
+        // 키보드 단축키를 사용한 확대/축소 방지
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0')) {
+                event.preventDefault();
+            }
+        });
+
+        // 마우스 휠을 사용한 확대/축소 방지
+        document.addEventListener('wheel', function(event) {
+            if (event.ctrlKey) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script> -->
+</head>
+
+<hr>
+<nav>
+    <form method="post" action="search/index.html">
+        <div class="menu_search_top">
+            <input type="text" id="search_top" name="search_top" placeholder="상품명 검색">
+            <!--search_top으로 설정-->
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </div>
+
+        <div class="menu_search_top_btn">
+            <input type="submit" value="Search">
+        </div>
+        
+    </form>
+    <div id="top_nav">
+        <ul> 
+            <li><a href="main.html">메인 페이지</a></li>
+        </ul>
+    </div>
+    <div class="login_nav">
+        <ul> 
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="useradd.html">회원가입</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="img/logo2_black.png"></a>
+    </div>
+
+    <div class="header_p">
+        <p>현재개발중</p>
+    </div>
+
+    <form method="post" action="search/index.html">
+    <div class="header_search">
+        <input type="text" id="header_search_text" name="header_search_text" placeholder="상품명 검색"  >
+        <!--header_search_text으로 설정-->
+        <button type="submit">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </button>
+
+    </div>
+</form>
+        <div class="main_nav">
+            <ul>
+                <li><a href="user.html">내 정보</a></li>
+                <li><a href="update.html">상품 등록</a></li>
+                <li><a href="product.html">재고 관리</a></li>
+                <li><a href="#">회계 관리</a></li>
+                <li><a href="#">발주</a>
+                    <ul>
+                        <li><a href="#">발주 신청</a></li>
+                        <li><a href="#">발주 내역 조회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">차량</a>
+                    <ul>
+                        <li><a href="#">차량 운행 기록</a></li>
+                        <li><a href="#">차량 위치 조회</a></li>
+                        <li><a href="#">배차 조회</a></li>
+                        <li><a href="#">배차 내역</a></li>
+                </ul>
+                </li>
+                <li><a href="#">시스템 소개</a>
+                </li>
+            </ul>
+
+            <div class="inquiry">
+                <ul>
+                    <li>
+                        <a href="#">
+                        <span class="material-symbols-outlined">
+                        support_agent
+                    </span>
+                    고객센터
+                </a>
+            </li>
+                </ul>
+
+            </div>
+        </div>
+</header>  <!--2024 06 20 header 끝-->
+
+<section>
+<div class="leftmenu">
+    <div class="leftmenu_nav">
+        <ul>
+            <li class="menu-item"><a href="index.html">대시보드</a>
+                <span class="material-symbols-outlined">
+                    dashboard
+                </span>
+            </li>
+            <li class="menu-item">
+                <a href="#">견적서</a>
+                <span class="material-symbols-outlined">
+                    description
+                </span>
+            </li>
+            <li class="menu-item"><a href="#">판매</a>
+            <span class="material-symbols-outlined">
+                select_check_box
+            </span>
+                <ul class="submenu">
+                    <li><a href="#">판매내역 조회</a></li>
+                    <li><a href="#">판매예약</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">차량 배차</a>
+                <span class="material-symbols-outlined">
+                    local_shipping
+                </span>
+                <ul class="submenu">
+                    <li><a href="#">차량 조회</a></li>
+                    <li><a href="#">차량 위치</a></li>
+                    <li><a href="#">배차 신청</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">상품</a>
+                <span class="material-symbols-outlined">
+                    package_2
+                </span>
+                <ul class="submenu">
+                    <li><a href="product.html">상품 조회</a></li>
+                    <li><a href="update.html">상품 등록</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">문의 내역</a>
+                <span class="material-symbols-outlined">
+                    help
+                </span>
+            </li>
+            <li class="menu-item"><a href="#">원격 지원</a>
+                <span class="material-symbols-outlined">
+                    support_agent
+                </span>
+            </li>
+        </ul>
+
+        <hr>
+    </div>
+</div>  <!--2024 06 20 서브메뉴 끝-->
+
+
+
+
+
+<div class="main_section">
+
+    <div class="userinfo">
+        <div class="userlogo">
+            <img src="img/user.png">
+            <p>사용자명</p>
+        </div>
+        
+        <div class="userinfo_text">
+            <p class="userinfo_text_p1">회원정보</p>
+            <p>이메일</p>
+            <p class="userinfo_text_bold">이메일(SQL로 받아오기)</p>
+            <p>전화번호</p>
+            <p class="userinfo_text_bold">전화번호 등록</p>
+            <p>ID</p>
+            <p class="userinfo_text_bold">ID(SQL로 받아오기)</p>
+            <p>가입날짜</p>
+            <p class="userinfo_text_bold">날짜(SQL로 받아오기)</p>
+
+            <p>소개</p>
+            <pre>사용자의 정보 작성 (SQL)</pre>
+            <div class="userinfo_btn">
+                <a href="#">
+                    <button>수정</button>
+                </a>
+                <div class="delete_btn">
+                    <button>탈퇴</buttaon>
+                </div>
+            </div>
+        </div>
+    </div>  <!--userinfo 끝-->
+
+</div>  <!--mainsection 끝-->
+</section>
+
+
+
+
+
+
+
+
+<footer>
+    <div class="company">
+        <div class="footer_logo">
+            <img src="img/logo2_black.png">
+        </div>
+        <div class="footer_text">
+            <div class="footer_text1">
+                <p><b>주소</b> : 서울특별시 은평구 통일로92가길 33</p>
+            </div>
+            <div class="footer_text2">
+                <p><b>이메일</b> smartmanage@sim.com</p>
+            </div>
+            <div class="footer_text3">
+                <p><b>통신판매신고번호</b> 2024-서울은평-0620호</p>
+            </div>
+            <div class="footer_text4">
+                <p><b>사업자등록번호</b> 301-10-06-123</p>
+            </div>
+            <div class="footer_text5">
+                <p><b>대표자</b> OOO</p>
+            </div>
+            <div class="copy">
+                <p>Copyright SIM&copy; SMC DOJE All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="security">
+        <div class="se_logo">  
+            <div class="se_img1">
+                <img src="img/smc.png">  <!--예시 이미지-->
+            </div>
+            <div class="se_p1">
+                <p>정보보호관리체계</p>
+            </div>
+            <div class="se_p2">
+                <p>SMC인증</p>
+            </div>
+            <div class="se_img2">
+                <img src="img/smc.png">  <!--예시 이미지-->
+            </div>
+            <div class="se_p3">
+                <p>정보보호관리체계</p>
+            </div>
+            <div class="se_p4">
+                <p>DOJE인증</p>
+            </div>
+        </div>
+    </div>
+</footer>  <!--Footer 부분 완성 240620-->
+
+

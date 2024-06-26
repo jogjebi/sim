@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .no-select {
+    -webkit-user-select: none;  /* Safari */
+    -moz-user-select: none;     /* Firefox */
+    -ms-user-select: none;      /* Internet Explorer/Edge */
+    user-select: none;          /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+header{
+    top: 5px;
+    position: relative;
+    display: flex;
+    width: 1750px;
+    margin: auto;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo{
+    width: 120px;
+    height: 100px;
+    /* background-color: aqua; */
+}
+
+.logo a img{
+    width: 130px;
+    margin-top: 10px;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.nav {
+    position: relative;
+    /* background-color: rgb(255, 226, 226); */
+    width: 900px;
+    height: 100px;
+}
+
+.nav ul li{
+    position: relative; /* Position 설정 추가 */
+    top: 35px;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover{
+    color: rgb(164, 193, 255);
+    transition: color 0.5s ease-in;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+.nav2{
+    position: relative;
+    width: 730px;
+    height: 100px;
+    right: 0;
+    /* background-color: rgb(203, 255, 203); */
+}
+
+.nav2 p{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav2 a button{
+    position: absolute;
+    top: 27px;
+    right: 250px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    width: 85px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.4); /* 투명 테두리 */
+}
+
+.nav2 a button:hover{
+    cursor: pointer;
+    background-color: rgb(248, 248, 248);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.start a button{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 170px;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #161237, rgb(21, 12, 44));
+    border: 1px solid rgba(0, 0, 0, 0.4); /* 투명 테두리 */
+    
+}
+
+
+section{
+    position: relative;
+    width: 1750px;
+    margin: auto;
+    height: 2850px;
+    background-color: #000714;
+    /* background-color: antiquewhite; */
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+.se1_text {
+    position: relative;
+    width: 1750px;
+    height: 850px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transform: translateY(50px); /* 처음에 요소를 아래로 이동시킴 */
+}
+
+.se1_text.visible {
+    opacity: 1;
+    transform: translateY(0); /* 스크롤 내릴 때 위로 올라오는 효과 */
+}
+
+.se1_text p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 80px;
+    color: white;
+    font-family: black;
+    font-family: "Jua", sans-serif;
+}
+
+.se1_img1 img {
+    position: absolute;
+    left: 640px;
+    bottom: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+.se1_img2 img {
+    position: absolute;
+    bottom: 0;
+    width: 1750px;
+    height: 500px;
+}
+
+.se1_text p .smart {
+    color: #79F0F5;
+}
+
+.se1_text p .smart2 {
+    color: #0E2B5D;
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.se2_text {
+    position: relative;
+    width: 1750px;
+    height: 750px;
+    background-color: #000414;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transform: translateY(50px); /* 처음에 요소를 아래로 이동시킴 */
+}
+
+.se2_text.visible {
+    opacity: 1;
+    transform: translateY(0); /* 스크롤 내릴 때 위로 올라오는 효과 */
+}
+
+.se2_text p {
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.se2_text_p2 p {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.se2_text img {
+    position: absolute;
+    top: 200px;
+    left: 570px;
+    width: 600px;
+    height: 450px;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.se3_text {
+    position: relative;
+    width: 1750px;
+    height: 700px;
+    background-color: #011533;
+}
+
+/* 초기 상태 숨김 */
+.se3_text p, .se3_text img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* 보이는 상태 */
+.se3_text .visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.se3_text p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-family: "Jua", sans-serif;
+}
+
+.se3_text_p2 p {
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.se3_text img {
+    position: absolute;
+    top: 180px;
+    left: 430px;
+    width: 900px;
+    height: 450px;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.se4_text {
+    position: relative;
+    width: 1750px;
+    height: 500px;
+    background-color: #010515;
+    overflow: hidden; /* 자식 요소의 애니메이션을 위한 설정 */
+}
+
+.se4_text p {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+
+}
+
+/* 초기 상태 숨김 */
+.se4_text p, .se4_text_p2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.se4_text_p2 ul {
+    width: 1300px;
+    list-style: none;
+    padding: 0;
+}
+
+.faq-item {
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.question {
+    padding: 15px;
+    background-color: #010515;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.answer {
+    overflow: hidden;
+    max-height: 0; /* 초기 높이를 0으로 설정 */
+    padding: 0 25px; /* 패딩을 줘서 트랜지션이 자연스럽게 보이게 함 */
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: max-height 0.5s ease, padding 0.5s ease; /* 트랜지션 효과 */
+}
+
+/* .active 클래스가 추가되었을 때 */
+.faq-item.active .answer {
+    max-height: 300px; /* 충분히 큰 값으로 설정하여 답변이 보이게 함 */
+    padding: 15px; /* 패딩을 추가하여 트랜지션 효과를 줌 */
+}
+
+/* 보이는 상태 */
+.se4_text .visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+footer{
+    display: flex;
+    width: 1750px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+.footer_cp{
+    position: relative;
+    width: 900px;
+    height: 200px;
+    /* background-color: #929292; */
+}
+
+.footer_cp1 ul{
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+.footer_cp1 ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+.footer_cp1 ul li a{
+    font-size: 15px;
+    color: white;
+}
+
+.footer_cp1 ul li a:hover{
+    color: #7bacff;
+    transition: color 0.5s ease-out;
+}
+
+
+.footer_cp2 ul{
+    position: absolute;
+    left: 100px;
+    top: 70px;
+}
+
+.footer_cp2 ul li{
+    display: inline-block;
+    line-height: 30px;
+}
+
+.footer_cp2 ul li{
+    font-size: 15px;
+    color: white;
+}
+
+.footer_cp2 li::after{
+    padding-left:10px;
+    content:"|";
+    color: black;
+}
+/* 간격주고 | 넣기  */
+
+.footer_cp2 li:last-child::after{content:""}
+/* 맨 마지막 리스트 오르쪽에는 X */
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.footer_2{
+    position: relative;
+    width: 850px;
+    height: 200px;
+    /* background-color: #b2d1a8; */
+}
+
+.ft2_cecu{
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: 200px;
+}
+
+.ft2_cecu img{
+    position: absolute;
+    left: 130px;
+    top: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.ft2_cecu p{
+    position: absolute;
+    left: 80px;
+    top: 130px;
+    color: white;
+}
+
